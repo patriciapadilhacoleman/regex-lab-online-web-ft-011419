@@ -39,7 +39,7 @@ end
 
 def valid_phone_number?(phone)
   
-  if phone.match() == nil
+  if phone.match(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/) == nil
     
     return false
     
